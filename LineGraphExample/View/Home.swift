@@ -42,10 +42,12 @@ struct Home: View {
                     CardView(image: "Bitcoin-icon", title: "BTC", color: Color.orange)
                 }
             }
+            .padding()
             
             Spacer()
             
         }.frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .top)
+            .background(.gray.opacity(0.1))
     }
     
     @ViewBuilder
